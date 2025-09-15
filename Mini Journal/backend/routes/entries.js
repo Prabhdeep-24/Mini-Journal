@@ -13,7 +13,7 @@ router.post(
     body('date').isISO8601().withMessage('Date must be YYYY-MM-DD'),
     body('content').isLength({ min: 1 }).withMessage('Content required'),
   ],
-  entriesControllxar.createEntry
+  entriesController.createEntry
 );
 
 router.get('/', entriesController.getEntries);

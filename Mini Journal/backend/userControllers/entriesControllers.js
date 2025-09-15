@@ -1,5 +1,5 @@
 import { validationResult } from 'express-validator';
-import Entry from '../models/Entry.js';
+import Entry from '../model/entryModel.js';
 
 function formatEntry(entry) {
   if (!entry) return null;
